@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center; /* Center text inside the text-box */
 }
 
 @keyframes gradient {
@@ -29,7 +30,7 @@ body {
     color: #fff;
     border-radius: 10px;
     max-width: 600px;
-    margin: 20px auto;
+    margin: 20px;
 }
 
 .container {
@@ -39,6 +40,15 @@ body {
 .grey-box {
     background: url('https://media.discordapp.net/attachments/1208705442759319582/1268255216386441287/StellatusBanner_1.png?ex=66c182f6&is=66c03176&hm=098433c75d4706fbcd8b17f8ee4f8178677324a530ff40729dce5b0d3b604db0&=&format=webp&quality=lossless') no-repeat center center;
     background-size: cover;
+}
+
+.text-box {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    color: #fff; /* Ensure text is visible */
+    background: rgba(0, 0, 0, 0.6); /* Match container style */
+    border-radius: 10px;
 }
 
 h1 {
@@ -66,4 +76,13 @@ button:hover {
 
 .grey-box button:hover {
     background-color: #0056b3; /* Same as container button */
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
