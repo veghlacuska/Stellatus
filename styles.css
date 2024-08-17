@@ -2,11 +2,28 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
-    background-size: cover;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container {
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container, .grey-box {
     text-align: center;
     padding: 50px;
     background: rgba(0, 0, 0, 0.6);
@@ -33,16 +50,6 @@ button {
 
 button:hover {
     background-color: #0056b3;
-}
-
-.grey-box {
-    text-align: center;
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 20px auto;
 }
 
 .grey-box button {
