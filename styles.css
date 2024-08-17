@@ -13,7 +13,7 @@ body {
     color: #fff;
     border-radius: 10px;
     max-width: 600px;
-    margin: 100px auto;
+    margin: 20px auto;
 }
 
 h1 {
@@ -35,16 +35,13 @@ button:hover {
     background-color: #0056b3;
 }
 
-.info-box {
-    text-align: center;
-    padding: 20px;
+.grey-box {
     background: #f0f0f0;
-    border-radius: 10px;
-    max-width: 400px;
-    margin: 20px auto;
+    color: #000;
+    padding: 20px;
 }
 
-.info-button {
+.grey-box button {
     background-color: #28a745;
     color: #fff;
     border: none;
@@ -53,9 +50,8 @@ button:hover {
     margin: 10px;
     cursor: pointer;
     font-size: 16px;
-    display: block;
 }
 
-.info-button:hover {
+.grey-box button:hover {
     background-color: #218838;
 }
