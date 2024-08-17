@@ -26,11 +26,19 @@ body {
 .container, .grey-box {
     text-align: center;
     padding: 50px;
-    background: rgba(0, 0, 0, 0.6);
     color: #fff;
     border-radius: 10px;
     max-width: 600px;
     margin: 20px auto;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.grey-box {
+    background: url('https://media.discordapp.net/attachments/1208705442759319582/1268255216386441287/StellatusBanner_1.png?ex=66c182f6&is=66c03176&hm=098433c75d4706fbcd8b17f8ee4f8178677324a530ff40729dce5b0d3b604db0&=&format=webp&quality=lossless') no-repeat center center;
+    background-size: cover;
 }
 
 h1 {
@@ -53,16 +61,9 @@ button:hover {
 }
 
 .grey-box button {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    font-size: 16px;
+    background-color: #007BFF; /* Same as container button */
 }
 
 .grey-box button:hover {
-    background-color: #218838;
+    background-color: #0056b3; /* Same as container button */
 }
