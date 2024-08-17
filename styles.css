@@ -38,8 +38,7 @@ body {
 }
 
 .grey-box {
-    background: url('https://media.discordapp.net/attachments/1208705442759319582/1268255216386441287/StellatusBanner_1.png?ex=66c182f6&is=66c03176&hm=098433c75d4706fbcd8b17f8ee4f8178677324a530ff40729dce5b0d3b604db0&=&format=webp&quality=lossless') no-repeat center center;
-    background-size: cover;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .text-box {
