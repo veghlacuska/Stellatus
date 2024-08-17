@@ -1,6 +1,6 @@
 function changeText() {
     var editableText = document.getElementById("editable-text");
-    var newText = prompt("Enter new text:");
+    var newText = prompt("change text:");
     if (newText !== null) {
         editableText.textContent = newText;
     }
