@@ -36,9 +36,13 @@ button:hover {
 }
 
 .grey-box {
-    background: #f0f0f0;
-    color: #000;
-    padding: 20px;
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 .grey-box button {
