@@ -46,9 +46,14 @@ body {
     max-width: 600px;
     margin: 20px;
     padding: 20px;
-    color: #fff; /* Ensure text is visible */
-    background: rgba(0, 0, 0, 0.6); /* Match container style */
+    color: #fff; /* White text color */
+    background: rgba(0, 0, 0, 0.7); /* Slightly darker background for contrast */
     border-radius: 10px;
+    font-family: 'Roboto', sans-serif; /* Stylish font */
+    font-weight: 400; /* Normal weight */
+    text-align: left; /* Left-align text for readability */
+    line-height: 1.6; /* Increase line height for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
 h1 {
