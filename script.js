@@ -1,7 +1,7 @@
+document.getElementById('theme-toggle').addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+});
+
 function changeText() {
-    var editableText = document.getElementById("editable-text");
-    var newText = prompt("change text:");
-    if (newText !== null) {
-        editableText.textContent = newText;
-    }
+    document.getElementById('editable-text').innerText = 'This is the new text after clicking the button!';
 }
