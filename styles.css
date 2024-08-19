@@ -1,25 +1,16 @@
-:root {
-    --background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    --text-color: #fff;
-    --button-background: #007BFF;
-    --button-hover: #0056b3;
-    --link-color: #007BFF;
-    --container-background: rgba(0, 0, 0, 0.6);
-}
-
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: var(--background);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Align items at the start for scrollable content */
+    flex-direction: column;
     text-align: center;
-    flex-direction: column; /* Stack elements vertically */
 }
 
 @keyframes gradient {
@@ -37,14 +28,14 @@ body {
 .container, .grey-box, .text-box {
     text-align: center;
     padding: 50px;
-    color: var(--text-color);
+    color: #fff;
     border-radius: 10px;
     max-width: 600px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .container {
-    background: var(--container-background);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .grey-box {
@@ -54,10 +45,10 @@ body {
 
 .text-box {
     max-width: 600px;
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
-    color: var(--text-color);
-    background: var(--container-background);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-align: left;
@@ -65,41 +56,27 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-h1 {
+h1, h2 {
     margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 button {
-    background-color: var(--button-background);
-    color: var(--text-color);
+    background-color: #007BFF;
+    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
     font-size: 16px;
-    border: 2px solid transparent; /* Default border style */
 }
 
 button:hover {
-    background-color: var(--button-hover);
-}
-
-.grey-box button {
-    background-color: var(--button-background);
-}
-
-.grey-box button:hover {
-    background-color: var(--button-hover);
+    background-color: #0056b3;
 }
 
 a {
-    color: var(--link-color);
+    color: #007BFF;
     text-decoration: none;
 }
 
@@ -107,21 +84,10 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Dark Theme Styles */
-body.dark-theme {
-    --background: #000;
-    --text-color: #fff;
-    --button-background: transparent;
-    --button-hover: transparent;
-    --link-color: #f00;
-    --container-background: rgba(255, 255, 255, 0.2);
+.grey-box button {
+    background-color: #007BFF;
 }
 
-body.dark-theme button {
-    border: 2px solid #fff; /* White outline for buttons in dark theme */
-}
-
-body.dark-theme .grey-box {
-    background: url('https://media.discordapp.net/attachments/1208705442759319582/1268255216386441287/StellatusBanner_1.png?ex=66c182f6&is=66c03176&hm=098433c75d4706fbcd8b17f8ee4f8178677324a530ff40729dce5b0d3b604db0&=&format=webp&quality=lossless') no-repeat center center;
-    background-color: rgba(0, 0, 0, 0.6); /* Overlay for visibility */
+.grey-box button:hover {
+    background-color: #0056b3;
 }
