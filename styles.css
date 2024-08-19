@@ -1,15 +1,25 @@
+:root {
+    --background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    --text-color: #fff;
+    --button-background: #007BFF;
+    --button-hover: #0056b3;
+    --link-color: #007BFF;
+    --container-background: rgba(0, 0, 0, 0.6);
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: var(--background);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Center text inside the text-box */
+    text-align: center;
+    flex-direction: column; /* Stack elements vertically */
 }
 
 @keyframes gradient {
@@ -24,34 +34,34 @@ body {
     }
 }
 
-.container, .grey-box {
+.container, .grey-box, .text-box {
     text-align: center;
     padding: 50px;
-    color: #fff;
+    color: var(--text-color);
     border-radius: 10px;
     max-width: 600px;
     margin: 20px;
 }
 
 .container {
-    background: rgba(0, 0, 0, 0.6);
+    background: var(--container-background);
 }
 
 .grey-box {
-    background: rgba(0, 0, 0, 0.6);
+    background: url('https://media.discordapp.net/attachments/1208705442759319582/1268255216386441287/StellatusBanner_1.png?ex=66c182f6&is=66c03176&hm=098433c75d4706fbcd8b17f8ee4f8178677324a530ff40729dce5b0d3b604db0&=&format=webp&quality=lossless') no-repeat center center;
+    background-size: cover;
 }
 
 .text-box {
     max-width: 600px;
     margin: 20px;
     padding: 20px;
-    color: #fff; /* White text color */
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-    font-family: 'Roboto', sans-serif; /* Stylish font */
+    color: var(--text-color);
+    background: var(--container-background);
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    text-align: center;
-    line-height: 1.5;
+    text-align: left;
+    line-height: 1.6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -59,34 +69,59 @@ h1 {
     margin-bottom: 20px;
 }
 
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 button {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: var(--button-background);
+    color: var(--text-color);
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     margin: 10px;
     cursor: pointer;
     font-size: 16px;
+    border: 2px solid transparent; /* Default border style */
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: var(--button-hover);
 }
 
 .grey-box button {
-    background-color: #007BFF; /* Same as container button */
+    background-color: var(--button-background);
 }
 
 .grey-box button:hover {
-    background-color: #0056b3; /* Same as container button */
+    background-color: var(--button-hover);
 }
 
 a {
-    color: #007BFF;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+    --background: #000;
+    --text-color: #fff;
+    --button-background: transparent;
+    --button-hover: transparent;
+    --link-color: #f00;
+    --container-background: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-theme button {
+    border: 2px solid #fff; /* White outline for buttons in dark theme */
+}
+
+body.dark-theme .grey-box {
+    background: url('https://media.discordapp.net/attachments/1208705442759319582/1268255216386441287/StellatusBanner_1.png?ex=66c182f6&is=66c03176&hm=098433c75d4706fbcd8b17f8ee4f8178677324a530ff40729dce5b0d3b604db0&=&format=webp&quality=lossless') no-repeat center center;
+    background-color: rgba(0, 0, 0, 0.6); /* Overlay for visibility */
 }
