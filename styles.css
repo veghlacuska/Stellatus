@@ -7,10 +7,8 @@ body {
     animation: gradient 15s ease infinite;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items at the start for scrollable content */
     flex-direction: column;
-    text-align: center;
+    align-items: center;
 }
 
 @keyframes gradient {
@@ -25,13 +23,24 @@ body {
     }
 }
 
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
 .container, .grey-box, .text-box {
     text-align: center;
     padding: 50px;
     color: #fff;
     border-radius: 10px;
     max-width: 600px;
-    margin: 20px auto;
+    margin: 20px;
+    box-sizing: border-box;
 }
 
 .container {
