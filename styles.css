@@ -9,6 +9,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
 }
 
 @keyframes gradient {
@@ -25,12 +27,20 @@ body {
 
 .main-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.header-section, .button-section, .footer-section {
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 1200px;
-    margin: 20px 0;
+    box-sizing: border-box;
 }
 
 .container, .grey-box, .text-box {
