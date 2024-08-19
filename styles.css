@@ -43,13 +43,22 @@ body {
     box-sizing: border-box;
 }
 
+.header-section > .container,
+.header-section > .text-box,
+.button-section > .container,
+.footer-section > .text-box {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
 .container, .grey-box, .text-box {
     text-align: center;
     padding: 50px;
     color: #fff;
     border-radius: 10px;
-    max-width: 600px;
-    margin: 20px;
     box-sizing: border-box;
 }
 
@@ -63,9 +72,6 @@ body {
 }
 
 .text-box {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
     color: #fff;
     background: rgba(0, 0, 0, 0.6);
     font-family: 'Roboto', sans-serif;
