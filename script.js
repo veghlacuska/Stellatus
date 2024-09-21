@@ -3,5 +3,5 @@ document.getElementById('theme-toggle').addEventListener('click', function() {
 });
 
 function changeText() {
-    document.getElementById('editable-text').innerText = 'This is the new text after clicking the button!';
+    document.getElementById('editable-text').innerText = 'https://discord.gg/GUerNAUKu2';
 }
